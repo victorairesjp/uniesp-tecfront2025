@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Formulário</title>
-</head>
-<body>
-    <form action="exibir.html" method="get" autocomplete="on">
-        <label for="nome">Nome: </label>
-        <input type="text" name="nome" id="nome" placeholder="Coloque seu nome aqui!" maxlength="10"required>
-        <br>
-        <label for="numero">Número: </label>
-        <input type="number" name="numero" id="numero">
-        <br>
-        <br>
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulário</title>
+    </head>
+    <body>
+        <form action="exibir.html" method="get" autocomplete="on">
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" placeholder="Coloque seu nome aqui!" maxlength="10"required>
+            <br>
+            <label for="numero">Número: </label>
+            <input type="number" name="numero" id="numero">
+            <br>
+            <br>
 
-        <div id="radios">
-            <label for="videogame">Radios de Videogame</label><br>
-            <input type="radio" name="videogame" value="atari"> Atari <br>
-            <input type="radio" name="videogame" value="snes"> Snes <br>
-            <input type="radio" name="videogame" value="ps"> PS <br><br>
+            <div id="radios">
+                <label for="videogame">Radios de Videogame</label><br>
+                <input type="radio" name="videogame" value="atari"> Atari <br>
+                <input type="radio" name="videogame" value="snes" checked> Snes <br>
+                <input type="radio" name="videogame" value="ps"> PS <br><br>
 
-            <label for="disciplinas">Radios de Disciplinas</label> <br>
-            <input type="radio" name="disciplinas" value="amelhor"> Tec Front <br>
-            <input type="radio" name="disciplinas" value="intro"> Introdução <br>
-            <input type="radio" name="disciplinas" value="br"> Banco de Dados <br>
-        </div>
+                <label for="disciplinas">Radios de Disciplinas</label> <br>
+                <input type="radio" name="disciplinas" value="amelhor"> Tec Front <br>
+                <input type="radio" name="disciplinas" value="intro"> Introdução <br>
+                <input type="radio" name="disciplinas" value="br"> Banco de Dados <br>
+            </div>
+            <hr>
+            <div id="checkboxes">
+                <label for="checkboxes"> Aqui tem os checkboxes de comida: </label><br>
+                <input type="checkbox" name="comida1" id="comida1" value="feijao">
+                <label for="comida1"> Feijão </label><br>
+                <input type="checkbox" name="comida2" id="comida2" value="arroz">
+                <label for="comida1"> Arroz </label><br>
+                <input type="checkbox" name="comida3" id="comida3" value="batata">
+                <label for="comida1"> Batata </label><br>
+            </div>
 
-        <input type="submit">
-    </form>
-    
-</body>
+            <input type="submit">
+        </form>
+        
+    </body>
 </html>
