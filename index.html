@@ -3,30 +3,36 @@
     <head>
         <meta charset="UTF-8">
         <title>Formulário</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
+
     <body>
+
         <form action="exibir.html" method="get" autocomplete="on">
-            <label for="nome">Nome: </label>
-            <input type="text" name="nome" id="nome" placeholder="Coloque seu nome aqui!" maxlength="10"><br>
+            <div id="usuario" class="dives">
+                <label class="formnome" id="lblnome" for="nome">Nome: </label>
+                <input class="formnome" type="text" name="nome" id="nome" placeholder="Coloque seu nome aqui!" maxlength="10"><br>
 
-            <label for="numero">Número: </label>
-            <input type="number" name="numero" id="numero"><br><br>
+                <label class="formnumero" id="lblnumero" for="numero">Número: </label>
+                <input class="formnumero" type="number" name="numero" id="numero"><br>
+            </div>  
+            <br>
 
-            <div id="radios">
-                <label for="videogame">Radios de Videogame</label><br>
+            <div id="radios" class="dives">
+                <label for="videogame" class="lblradios">Radios de Videogames:</label><br>
                 <input type="radio" name="videogame" value="atari"> Atari <br>
                 <input type="radio" name="videogame" value="snes"> Snes <br>
                 <input type="radio" name="videogame" value="ps"> PS <br><br>
 
-                <label for="disciplinas">Radios de Disciplinas</label> <br>
+                <label for="disciplinas" class="lblradios">Radios de Disciplinas:</label> <br>
                 <input type="radio" name="disciplinas" value="amelhor"> Tec Front <br>
                 <input type="radio" name="disciplinas" value="intro"> Introdução <br>
                 <input type="radio" name="disciplinas" value="br"> Banco de Dados <br>
             </div>
-            <hr>
+            <br>
 
-            <div id="checkboxes">
-                <label for="checkboxes"> Aqui tem os checkboxes de comida: </label><br>
+            <div id="checkboxes" class="dives">
+                <label for="checkboxes" class="lblcheckboxes"> Aqui tem os checkboxes de comida: </label><br>
 
                 <input type="checkbox" name="comida1" id="comida1" value="feijao">
                 <label for="comida1"> Feijão </label><br>
@@ -35,12 +41,15 @@
                 <label for="comida1"> Arroz </label><br>
 
                 <input type="checkbox" name="comida3" id="comida3" value="batata">
-                <label for="comida1"> Batata </label><br>
+                <label for="comida1"> Batata </label><br><br>
+
+                <input type="checkbox" name="aceito" id="aceito" value="O Contrato foi aceito!">
+                <label for="aceito" id="lbltermos"> Você aceita os termos do contrato? </label><br>
             </div>
             <br>
 
-            <div id="select">
-                <label for="carros">Escolha o carro: </label><br>
+            <div id="select" class="dives">
+                <label for="carros" class="lblselect">Escolha o carro: </label>
                 <select name="carros" id="carros">
                     <option value="ferrari">Ferrari</option>
                     <option value="mercedes">Mercedes</option>
@@ -49,8 +58,7 @@
             </div>
             <br>
             
-            <input type="checkbox" name="aceito" id="aceito" value="O Contrato foi aceito!">
-            <label for="aceito"> Você aceita os termos do contrato? </label><br>
+            
             
             <input type="submit" id="botao_enviar" value="Enviar">
         </form>
